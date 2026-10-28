@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priya Agarwal | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio website of Priya Agarwal, a B.Tech CSE (AI & DS) student at JECRC University."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="logo" href="#home">Priya Agarwal</a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <div class="nav-panel" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a
+              class="nav-github"
+              href="https://github.com/YOUR-GITHUB-USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+              <span class="theme-toggle-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Student Portfolio</p>
+            <h1>Priya Agarwal</h1>
+            <p class="lead">
+              2nd year B.Tech CSE (AI &amp; DS) student at JECRC University.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="hero-photo">
+            <img
+              src="assets/profile-placeholder.svg"
+              alt="Placeholder profile photo for Priya Agarwal. Replace this file with your photo."
+              width="320"
+              height="400"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <p class="eyebrow">About Me</p>
+          <h2>A short introduction</h2>
+          <div class="about-grid">
+            <p>
+              I am Priya Agarwal, a second-year B.Tech student in Computer Science
+              Engineering with Artificial Intelligence and Data Science at JECRC
+              University. My course runs from 2025 to 2029.
+            </p>
+            <p>
+              This website is my personal portfolio for a Prompt Engineering internal
+              assessment. I am a beginner, and I built it with HTML, CSS, and
+              JavaScript.
+              <span class="muted"> [Add more about your interests here.]</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="education">
+        <div class="container">
+          <p class="eyebrow">Education</p>
+          <h2>Academic background</h2>
+          <div class="education-list">
+            <article class="card education-card">
+              <p class="card-meta">2025 – 2029</p>
+              <h3>B.Tech in CSE (AI &amp; DS)</h3>
+              <p>JECRC University</p>
+              <p class="muted">Currently in 2nd year</p>
+            </article>
+            <article class="card education-card">
+              <p class="card-meta">[Year]</p>
+              <h3>[School / Senior Secondary]</h3>
+              <p>[School Name]</p>
+              <p class="muted">[Optional: board, stream, or percentage]</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <p class="eyebrow">Technical Skills</p>
+          <h2>What I am learning</h2>
+          <div class="skills-grid">
+            <article class="card">
+              <h3>Web</h3>
+              <ul class="skill-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>[Add another skill]</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Tools</h3>
+              <ul class="skill-tags">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>[Add another tool]</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>AI &amp; Prompt Engineering</h3>
+              <ul class="skill-tags">
+                <li>Prompt Engineering</li>
+                <li>[Tool 1]</li>
+                <li>[Add another skill]</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="projects">
+        <div class="container">
+          <p class="eyebrow">My Projects</p>
+          <h2>Selected work</h2>
+          <p class="section-intro">
+            Search by title or filter by category. Project details below are
+            placeholders until you add your own work.
+          </p>
+
+          <div class="project-toolbar">
+            <label class="search-field">
+              <span class="sr-only">Search projects</span>
+              <input
+                id="project-search"
+                type="search"
+                placeholder="Search projects..."
+                autocomplete="off"
+              />
+            </label>
+            <div class="filter-group" role="group" aria-label="Filter projects">
+              <button class="filter-btn is-active" type="button" data-filter="all">
+                All
+              </button>
+              <button class="filter-btn" type="button" data-filter="web">Web</button>
+              <button class="filter-btn" type="button" data-filter="academic">
+                Academic
+              </button>
+              <button class="filter-btn" type="button" data-filter="practice">
+                Practice
+              </button>
+            </div>
+          </div>
+
+          <div class="project-grid" id="project-grid">
+            <article class="card project-card" data-category="web" data-title="project one placeholder title">
+              <p class="card-meta">Web</p>
+              <h3>Project One</h3>
+              <p>[Short description of project 1. Replace this with your own project summary.]</p>
+              <ul class="skill-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <a href="#" aria-disabled="true">GitHub link coming later</a>
+            </article>
+
+            <article class="card project-card" data-category="academic" data-title="project two placeholder title">
+              <p class="card-meta">Academic</p>
+              <h3>Project Two</h3>
+              <p>[Short description of project 2. Replace this with your own project summary.]</p>
+              <ul class="skill-tags">
+                <li>HTML</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="#" aria-disabled="true">GitHub link coming later</a>
+            </article>
+
+            <article class="card project-card" data-category="practice" data-title="project three placeholder title">
+              <p class="card-meta">Practice</p>
+              <h3>Project Three</h3>
+              <p>[Short description of project 3. Replace this with your own project summary.]</p>
+              <ul class="skill-tags">
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="#" aria-disabled="true">GitHub link coming later</a>
+            </article>
+
+            <article class="card project-card" data-category="web" data-title="project four placeholder title">
+              <p class="card-meta">Web</p>
+              <h3>Project Four</h3>
+              <p>[Short description of project 4. Replace this with your own project summary.]</p>
+              <ul class="skill-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="#" aria-disabled="true">GitHub link coming later</a>
+            </article>
+
+            <article class="card project-card" data-category="academic" data-title="project five placeholder title">
+              <p class="card-meta">Academic</p>
+              <h3>Project Five</h3>
+              <p>[Short description of project 5. Replace this with your own project summary.]</p>
+              <ul class="skill-tags">
+                <li>JavaScript</li>
+              </ul>
+              <a href="#" aria-disabled="true">GitHub link coming later</a>
+            </article>
+          </div>
+
+          <p class="empty-state" id="project-empty" hidden>
+            No projects match that search or filter. Try another keyword.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s connect</h2>
+            <p>
+              Email, GitHub, and city are still placeholders until you share them.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span>Email</span>
+                <a href="mailto:your.email@example.com">[your.email@example.com]</a>
+              </li>
+              <li>
+                <span>GitHub</span>
+                <a
+                  href="https://github.com/YOUR-GITHUB-USERNAME"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/YOUR-GITHUB-USERNAME
+                </a>
+              </li>
+              <li>
+                <span>Location</span>
+                <span>[Your City, Your State]</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="card contact-form" id="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" required placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required placeholder="you@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows="5"
+                required
+                placeholder="Write a short message"
+              ></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-note" id="form-note" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Priya Agarwal · Student portfolio · Built with HTML, CSS, and JavaScript</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
